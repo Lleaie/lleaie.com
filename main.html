@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lleaie</title>
+    <meta content="lleaie.com" property="og:site_name">
+    <meta content="lleaie" property="og:title">
+    <meta content="Raise invalid opcode exception." property="og:description">
+    <meta content="object" property="og:type">
+    <meta content="https://lleaie.com" property="og:url">
+    <meta content="#37474f" data-react-helmet="true" name="theme-color">
+    <script src="/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body style="background-color: black;">
+    <div class="container">
+        <div id="terminal" style="margin: 14px; font: 14px; line-height: 14px;">
+        </div>
+    </div>
+    <div id="screen_container" style="display: none; margin-left: auto; margin-right: auto;">
+        <div style="white-space: pre; font: 14px monospace; line-height: 14px; display: flex;"></div>
+        <canvas style="display: none"></canvas>
+    </div>
+    <button id="halt-vm" style="display: none;">Halt VM</button>
+    <!-- for iOS/Andy -->
+    <input type="text" id="dummyText" style="width:0px; height:0px; opacity:0; background-color: black;" />
+    <input id="keyboardFocus" type="button" value="show keyboard" onclick="window.showKeyboard();" style="display: none;"/>
+</body>
+</html>
