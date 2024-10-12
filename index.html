@@ -30,7 +30,7 @@
     <section class="under-construction">
         <div class="construction-box">
             <h1>Under Construction</h1>
-            <p>This website is currently under construction <br> and will be finished soon</p>
+            <p id="typewriter-text"></p>
         </div>
     </section>
 
@@ -54,5 +54,25 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const text = "This website is currently under construction \nand will be finished soon \ncheck back another time! <3"; // under construction animation text
+        const element = document.getElementById("typewriter-text");
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                const char = text[index] === "\n" ? "<br>" : text[index]; // convert newline to <br>
+                element.innerHTML += char;
+                index++;
+                setTimeout(typeWriter, 55); // adjust anim speed
+            }
+        }
+
+        typeWriter(); //ctf
+    });
+    </script>
+
 </body>
 </html>
