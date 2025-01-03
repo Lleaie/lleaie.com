@@ -9,6 +9,11 @@ html, body {
     margin: 0;
 }
 
+::selection {
+    background-color: #6455a1;
+    color: #fff;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     display: flex;
