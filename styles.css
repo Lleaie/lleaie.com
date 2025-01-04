@@ -9,11 +9,6 @@ html, body {
     margin: 0;
 }
 
-::selection {
-    background-color: #6455a1;
-    color: #fff;
-}
-
 body {
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -95,4 +90,10 @@ body {
 #loader.fade-out {
     opacity: 0;
     transition: opacity 0.5s ease;
+}
+
+@media (orientation: portrait) {
+    body {
+        background-image: url('assets/img/EkoTeasePortrait.png');
+    }
 }
