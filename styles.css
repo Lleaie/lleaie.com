@@ -3,6 +3,11 @@
     src: url(ANGELIC.TTF);
 }
 
+::selection {
+    background-color: #6455a1;
+    color: #fff;
+}
+
 html, body {
     overflow: hidden;
     height: 100%;
